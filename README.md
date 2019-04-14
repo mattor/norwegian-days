@@ -19,13 +19,13 @@ $ yarn add norwegian-days
 ## Usage
 
 ```js
-import getNorwegianSpecialdays from "norwegian-days";
+import getSpecialDays from "norwegian-days";
 
 // Get all special days of current year
-const specialDaysOfCurrentYear = getNorwegianSpecialdays();
+const specialDaysOfCurrentYear = getSpecialDays();
 
 // Get all special days of the year 1977
-const specialDaysOf1977 = getNorwegianSpecialdays(1977);
+const specialDaysOf1977 = getSpecialDays(1977);
 ```
 
 ## Included days
