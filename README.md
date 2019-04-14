@@ -48,9 +48,9 @@ const specialDaysOf1977 = getSpecialDays(1977);
 - Første påskedag
 - Andre påskedag
 - Kristi himmelfartsdag
-- Offentlig høytidsdag
+- Offentlig høytidsdag (1. mai)
 - Årets første grilldag
-- Grunnlovsdag
+- Grunnlovsdag (17. mai)
 - Første pinsedag
 - Andre pinsedag
 - Verdens melkedag
@@ -59,7 +59,7 @@ const specialDaysOf1977 = getSpecialDays(1977);
 - Olsok
 - Den norske epledagen
 - Verdens skolemelkdag
-- Fårikålens Festdag
+- Fårikålens festdag
 - Lutefisksesongen starter
 - Kanelbollens dag
 - Verdens eggdag
