@@ -18,9 +18,14 @@
         "url": "https://github.com/mattor/norwegian-days/issues"
     },
     "scripts": {
-        "build": "tsc"
+        "build": "tsc",
+        "clean": "rimraf lib",
+        "lint": "tslint --project . --fix",
+        "prepare": "npm run clean && npm run lint && npm run build"
     },
     "devDependencies": {
+        "rimraf": "^2.6.3",
+        "tslint": "^5.16.0",
         "typescript": "^3.4.5"
     }
 }
