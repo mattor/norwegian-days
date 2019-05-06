@@ -1,4 +1,4 @@
-import Weekday from "../types/Weekday"
+import Weekday from "../types/Weekday";
 
 const getNthLastWeekdayInMonth = (nth: number, day: Weekday, m: number, y: number): Date => {
     let targetDay = new Date(0, 0, 0);

@@ -1,13 +1,13 @@
-import ISpecialDay from "./types/ISpecialDay"
-import SpecialDayType from "./types/SpecialDayType"
-import Weekday from "./types/Weekday"
-import getEasterSunday from "./helpers/getEasterSunday"
-import getNthLastWeekdayInMonth from "./helpers/getNthLastWeekdayInMonth"
-import getNthWeekdayInMonth from "./helpers/getNthWeekdayInMonth"
+import getEasterSunday from "./helpers/getEasterSunday";
+import getNthLastWeekdayInMonth from "./helpers/getNthLastWeekdayInMonth";
+import getNthWeekdayInMonth from "./helpers/getNthWeekdayInMonth";
+import ISpecialDay from "./types/ISpecialDay";
+import SpecialDayType from "./types/SpecialDayType";
+import Weekday from "./types/Weekday";
 
 const getSpecialDays = (year?: number): ISpecialDay[] => {
-    year = year !== undefined ? year : new Date().getFullYear()
-    const { PublicHoliday, Celebration } = SpecialDayType
+    year = year !== undefined ? year : new Date().getFullYear();
+    const { PublicHoliday, Celebration } = SpecialDayType;
     const easter = getEasterSunday(year);
 
     const specialDays: ISpecialDay[] = [
