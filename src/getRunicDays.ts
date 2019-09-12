@@ -395,7 +395,7 @@ const getRunicDays = (year: number = new Date().getFullYear()): ISpecialDay[] =>
         },
         {
             date: new Date(year, 11, 21),
-            name: "Tomasmesse I[3], Tomas brygger",
+            name: "Tomasmesse I, Tomas brygger",
             type: SpecialDayType.Runic,
         },
         {
