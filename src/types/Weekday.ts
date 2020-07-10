@@ -8,4 +8,4 @@ enum Weekday {
     Saturday = 6,
 }
 
-export default Weekday;
+export default Weekday

@@ -1,4 +1,4 @@
-import SpecialDayType from "./SpecialDayType";
+import SpecialDayType from "./SpecialDayType"
 
 interface ISpecialDay {
     name: string;
@@ -6,4 +6,4 @@ interface ISpecialDay {
     type: SpecialDayType;
 }
 
-export default ISpecialDay;
+export default ISpecialDay

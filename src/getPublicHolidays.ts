@@ -1,9 +1,9 @@
-import getEasterSunday from "./helpers/getEasterSunday";
-import ISpecialDay from "./types/ISpecialDay";
-import SpecialDayType from "./types/SpecialDayType";
+import getEasterSunday from "./helpers/getEasterSunday"
+import ISpecialDay from "./types/ISpecialDay"
+import SpecialDayType from "./types/SpecialDayType"
 
 const getPublicHolidays = (year: number = new Date().getFullYear()): ISpecialDay[] => {
-    const easter = getEasterSunday(year);
+    const easter = getEasterSunday(year)
 
     return [
         {
@@ -81,7 +81,7 @@ const getPublicHolidays = (year: number = new Date().getFullYear()): ISpecialDay
             name: "Nyttårsaften",
             type: SpecialDayType.PublicHoliday,
         },
-    ];
-};
+    ]
+}
 
-export default getPublicHolidays;
+export default getPublicHolidays

@@ -1,12 +1,12 @@
-import getEasterSunday from "./helpers/getEasterSunday";
-import getNthLastWeekdayInMonth from "./helpers/getNthLastWeekdayInMonth";
-import getNthWeekdayInMonth from "./helpers/getNthWeekdayInMonth";
-import ISpecialDay from "./types/ISpecialDay";
-import SpecialDayType from "./types/SpecialDayType";
-import Weekday from "./types/Weekday";
+import getEasterSunday from "./helpers/getEasterSunday"
+import getNthLastWeekdayInMonth from "./helpers/getNthLastWeekdayInMonth"
+import getNthWeekdayInMonth from "./helpers/getNthWeekdayInMonth"
+import ISpecialDay from "./types/ISpecialDay"
+import SpecialDayType from "./types/SpecialDayType"
+import Weekday from "./types/Weekday"
 
 const getCelebrationDays = (year: number = new Date().getFullYear()): ISpecialDay[] => {
-    const easter = getEasterSunday(year);
+    const easter = getEasterSunday(year)
 
     return [
         {
@@ -164,7 +164,7 @@ const getCelebrationDays = (year: number = new Date().getFullYear()): ISpecialDa
             name: "Luciadagen",
             type: SpecialDayType.Celebration,
         },
-    ];
-};
+    ]
+}
 
-export default getCelebrationDays;
+export default getCelebrationDays

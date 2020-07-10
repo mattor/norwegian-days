@@ -20,13 +20,21 @@
     "scripts": {
         "build": "tsc",
         "clean": "rimraf lib",
-        "lint": "tslint --project . --fix",
+        "lint": "eslint . --report-unused-disable-directives --fix",
         "prepare": "npm run clean && npm run lint && npm run build"
     },
     "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^3.6.0",
+        "@typescript-eslint/parser": "^3.6.0",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^7.4.0",
+        "eslint-config-mattor": "^1.1.2",
+        "eslint-plugin-import": "^2.22.0",
+        "eslint-plugin-jsx-a11y": "^6.3.1",
+        "eslint-plugin-react": "^7.20.3",
+        "eslint-plugin-react-hooks": "^4.0.6",
+        "minimist": ">=1.2.5",
         "rimraf": "^3.0.2",
-        "tslint": "^6.1.0",
-        "typescript": "^3.8.3",
-        "minimist": ">=1.2.5"
+        "typescript": "^3.9.6"
     }
 }

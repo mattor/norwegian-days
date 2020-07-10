@@ -4,4 +4,4 @@ enum SpecialDayType {
     Runic = "RUNIC",
 }
 
-export default SpecialDayType;
+export default SpecialDayType
