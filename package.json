@@ -24,10 +24,10 @@
         "prepare": "npm run clean && npm run lint && npm run build"
     },
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^4.29.2",
-        "@typescript-eslint/parser": "^4.29.2",
+        "@typescript-eslint/eslint-plugin": "^8.46.4",
+        "@typescript-eslint/parser": "^8.46.4",
         "babel-eslint": "^10.1.0",
-        "eslint": "^7.32.0",
+        "eslint": "^9.39.1",
         "eslint-config-mattor": "^1.2.0",
         "eslint-plugin-import": "^2.24.0",
         "eslint-plugin-jsx-a11y": "^6.4.1",
