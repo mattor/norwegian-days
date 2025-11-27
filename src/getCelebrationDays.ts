@@ -193,6 +193,12 @@ export function getCelebrationDays(year: number = new Date().getFullYear()): Spe
       id: CelebrationDayId.Thanksgiving,
     },
     {
+      date: getDateString(19, 11, year),
+      name: 'Den internasjonale mannsdagen',
+      type: 'celebration',
+      id: CelebrationDayId.InternationalMensDay,
+    },
+    {
       date: getDateString(13, 12, year),
       name: 'Luciadagen',
       type: 'celebration',

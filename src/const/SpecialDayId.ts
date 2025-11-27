@@ -11,6 +11,7 @@ export const CelebrationDayId = {
   FishDay: 'fish-day',
   FourthSundayOfAdvent: 'fourth-sunday-of-advent',
   Halloween: 'halloween',
+  InternationalMensDay: 'international-mens-day',
   LuciaDay: 'lucia-day',
   MidsummersEve: 'midsummers-eve',
   MortensFair: 'mortens-fair',
