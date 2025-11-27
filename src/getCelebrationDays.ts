@@ -44,7 +44,7 @@ export function getCelebrationDays(year: number = new Date().getFullYear()): Spe
     },
     {
       date: getDateString(8, 3, year),
-      name: 'Den internasjonale kvindedagen',
+      name: 'Den internasjonale kvinnedagen',
       type: 'celebration',
       id: CelebrationDayId.InternationalWomensDay,
     },
