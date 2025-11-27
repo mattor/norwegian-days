@@ -3,11 +3,13 @@ import { CelebrationDayId } from './const/SpecialDayId'
 import { Weekday } from './const/Weekday'
 import { getDateString } from './helpers/getDateString'
 import { getEasterSunday } from './helpers/getEasterSunday'
+import { getFirstSundayOfAdvent } from './helpers/getFirstSundayOfAdvent'
 import { getNthLastWeekdayInMonth } from './helpers/getNthLastWeekdayInMonth'
 import { getNthWeekdayInMonth } from './helpers/getNthWeekdayInMonth'
 
 export function getCelebrationDays(year: number = new Date().getFullYear()): SpecialDay[] {
   const easter = getEasterSunday(year)
+  const firstSundayOfAdvent = getFirstSundayOfAdvent(year)
 
   return [
     {
@@ -195,6 +197,30 @@ export function getCelebrationDays(year: number = new Date().getFullYear()): Spe
       name: 'Luciadagen',
       type: 'celebration',
       id: CelebrationDayId.LuciaDay,
+    },
+    {
+      date: getDateString(firstSundayOfAdvent.day, firstSundayOfAdvent.month, year),
+      name: 'Første søndag i advent',
+      type: 'celebration',
+      id: CelebrationDayId.FirstSundayOfAdvent,
+    },
+    {
+      date: getDateString(firstSundayOfAdvent.day + 7, firstSundayOfAdvent.month, year),
+      name: 'Andre søndag i advent',
+      type: 'celebration',
+      id: CelebrationDayId.SecondSundayOfAdvent,
+    },
+    {
+      date: getDateString(firstSundayOfAdvent.day + 14, firstSundayOfAdvent.month, year),
+      name: 'Tredje søndag i advent',
+      type: 'celebration',
+      id: CelebrationDayId.ThirdSundayOfAdvent,
+    },
+    {
+      date: getDateString(firstSundayOfAdvent.day + 21, firstSundayOfAdvent.month, year),
+      name: 'Fjerde søndag i advent',
+      type: 'celebration',
+      id: CelebrationDayId.FourthSundayOfAdvent,
     },
   ]
 }
