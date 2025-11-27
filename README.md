@@ -83,7 +83,12 @@ const specialDaysOf2019 = getSpecialDays(2019, ['RUNIC'])
 - Mortensmesse
 - Farsdag
 - Thanksgiving
+- Den internasjonale mannsdagen
 - Luciadagen
+- Første søndag i advent
+- Andre søndag i advent
+- Tredje søndag i advent
+- Fjerde søndag i advent
 
 ### Runic calendar days
 
