@@ -1,40 +1,34 @@
 {
-    "name": "norwegian-days",
-    "version": "1.1.2",
-    "description": "Generate a list of Norway's public holidays and other celebrations during a year",
-    "license": "MIT",
-    "author": "Torbjørn Mathisen",
-    "files": [
-        "/lib"
-    ],
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts",
-    "homepage": "https://github.com/mattor/norwegian-days#readme",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/mattor/norwegian-days.git"
-    },
-    "bugs": {
-        "url": "https://github.com/mattor/norwegian-days/issues"
-    },
-    "scripts": {
-        "build": "tsc",
-        "clean": "rimraf lib",
-        "lint": "eslint . --report-unused-disable-directives --fix",
-        "prepare": "npm run clean && npm run lint && npm run build"
-    },
-    "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^4.29.2",
-        "@typescript-eslint/parser": "^4.29.2",
-        "babel-eslint": "^10.1.0",
-        "eslint": "^7.32.0",
-        "eslint-config-mattor": "^1.2.0",
-        "eslint-plugin-import": "^2.24.0",
-        "eslint-plugin-jsx-a11y": "^6.4.1",
-        "eslint-plugin-react": "^7.24.0",
-        "eslint-plugin-react-hooks": "^4.2.0",
-        "minimist": ">=1.2.5",
-        "rimraf": "^3.0.2",
-        "typescript": "^4.3.5"
-    }
+  "name": "norwegian-days",
+  "version": "1.1.2",
+  "description": "Generate a list of Norway's public holidays and other celebrations during a year",
+  "author": "Torbjørn Mathisen",
+  "license": "MIT",
+  "homepage": "https://github.com/mattor/norwegian-days#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattor/norwegian-days.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mattor/norwegian-days/issues"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "lint": "eslint --fix",
+    "prepare": "npm run clean && npm run lint && npm run build"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^6.2.0",
+    "eslint": "^9.38.0",
+    "eslint-plugin-format": "^1.0.2",
+    "minimist": ">=1.2.8",
+    "rimraf": "^6.1.2",
+    "typescript": "^5.9.3"
+  }
 }

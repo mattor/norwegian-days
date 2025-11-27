@@ -1,9 +1,9 @@
-import SpecialDayType from "./SpecialDayType"
+import type SpecialDayType from './SpecialDayType'
 
 interface ISpecialDay {
-    name: string;
-    date: Date;
-    type: SpecialDayType;
+  name: string
+  date: Date
+  type: SpecialDayType
 }
 
 export default ISpecialDay

@@ -19,16 +19,16 @@ $ yarn add norwegian-days
 ## Usage
 
 ```js
-import getSpecialDays from "norwegian-days";
+import getSpecialDays from 'norwegian-days'
 
 // Get all public holidays and celebrations of current year
-const specialDaysOfCurrentYear = getSpecialDays();
+const specialDaysOfCurrentYear = getSpecialDays()
 
 // Get all public holidays and celebrations of the year 1977
-const specialDaysOf1977 = getSpecialDays(1977);
+const specialDaysOf1977 = getSpecialDays(1977)
 
 // Get all Runic calendar days of the year 2019
-const specialDaysOf1977 = getSpecialDays(2019, [ "RUNIC" ]);
+const specialDaysOf2019 = getSpecialDays(2019, ['RUNIC'])
 ```
 
 ## Included days
