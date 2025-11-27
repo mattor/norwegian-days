@@ -43,6 +43,12 @@ export function getCelebrationDays(year: number = new Date().getFullYear()): Spe
       id: CelebrationDayId.FishDay,
     },
     {
+      date: getDateString(8, 3, year),
+      name: 'Den internasjonale kvindedagen',
+      type: 'celebration',
+      id: CelebrationDayId.InternationalWomensDay,
+    },
+    {
       date: getDateString(22, 3, year),
       name: 'Verdens vanndag',
       type: 'celebration',

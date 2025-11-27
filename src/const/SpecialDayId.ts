@@ -12,6 +12,7 @@ export const CelebrationDayId = {
   FourthSundayOfAdvent: 'fourth-sunday-of-advent',
   Halloween: 'halloween',
   InternationalMensDay: 'international-mens-day',
+  InternationalWomensDay: 'international-womens-day',
   LuciaDay: 'lucia-day',
   MidsummersEve: 'midsummers-eve',
   MortensFair: 'mortens-fair',

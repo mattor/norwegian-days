@@ -58,6 +58,7 @@ const specialDaysOf2019 = getSpecialDays(2019, ['RUNIC'])
 - Valentinsdag
 - Morsdag
 - Fiskens dag
+- Den internasjonale kvinnedagen
 - Verdens vanndag
 - Den store vaffeldagen
 - Kakedagen
