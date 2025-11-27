@@ -21,14 +21,16 @@
     "build": "tsc",
     "clean": "rimraf lib",
     "lint": "eslint --fix",
-    "prepare": "npm run clean && npm run lint && npm run build"
+    "prepare": "npm run clean && npm run lint && npm run build",
+    "test": "vitest"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.2.0",
-    "eslint": "^9.38.0",
+    "eslint": "^9.39.1",
     "eslint-plugin-format": "^1.0.2",
     "minimist": ">=1.2.8",
     "rimraf": "^6.1.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
   }
 }
