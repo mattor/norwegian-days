@@ -13,6 +13,6 @@ export function getEasterSunday(year: number) {
 
   return {
     day: d,
-    month: m - 1,
+    month: m,
   }
 }

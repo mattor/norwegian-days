@@ -1,173 +1,200 @@
-import type SpecialDay from './types/SpecialDay'
+import type { SpecialDay } from './types/SpecialDay'
+import { CelebrationDayId } from './const/SpecialDayId'
+import { Weekday } from './const/Weekday'
+import { getDateString } from './helpers/getDateString'
 import { getEasterSunday } from './helpers/getEasterSunday'
 import { getNthLastWeekdayInMonth } from './helpers/getNthLastWeekdayInMonth'
 import { getNthWeekdayInMonth } from './helpers/getNthWeekdayInMonth'
-import { Weekday } from './types/Weekday'
 
 export function getCelebrationDays(year: number = new Date().getFullYear()): SpecialDay[] {
   const easter = getEasterSunday(year)
 
   return [
     {
-      date: new Date(year, 0, 17),
+      date: getDateString(17, 1, year),
       name: 'Grisens dag',
       type: 'celebration',
-      id: 'pigs-day',
+      id: CelebrationDayId.PigsDay,
     },
     {
-      date: new Date(year, 1, 6),
+      date: getDateString(6, 2, year),
       name: 'Samefolkets dag',
       type: 'celebration',
-      id: 'sami-people-day',
+      id: CelebrationDayId.SamiPeoplesDay,
     },
     {
-      date: new Date(year, 1, 14),
+      date: getDateString(14, 2, year),
       name: 'Valentinsdag',
       type: 'celebration',
-      id: 'valentines-day',
+      id: CelebrationDayId.ValentinesDay,
     },
     {
       date: getNthWeekdayInMonth(2, Weekday.Sunday, 1, year),
       name: 'Morsdag',
       type: 'celebration',
-      id: 'mothers-day',
+      id: CelebrationDayId.MothersDay,
     },
     {
-      date: new Date(year, 2, 6),
+      date: getDateString(6, 3, year),
       name: 'Fiskens dag',
       type: 'celebration',
-      id: 'fish-day',
+      id: CelebrationDayId.FishDay,
     },
     {
-      date: new Date(year, 2, 22),
+      date: getDateString(22, 3, year),
       name: 'Verdens vanndag',
       type: 'celebration',
+      id: CelebrationDayId.WorldWaterDay,
     },
     {
-      date: new Date(year, 2, 25),
+      date: getDateString(25, 3, year),
       name: 'Den store vaffeldagen',
       type: 'celebration',
-      id: 'world-water-day',
+      id: CelebrationDayId.WorldWaffleDay,
     },
     {
-      date: new Date(year, 3, 8),
+      date: getDateString(8, 4, year),
       name: 'Kakedagen',
       type: 'celebration',
+      id: CelebrationDayId.CakeDay,
     },
     {
-      date: new Date(year, 3, 22),
+      date: getDateString(22, 4, year),
       name: 'Jordens dag (Earth Day)',
       type: 'celebration',
+      id: CelebrationDayId.EarthDay,
     },
     {
-      date: new Date(year, easter.month, easter.day - 5),
+      date: getDateString(easter.day - 5, easter.month, year),
       name: 'Feitetirsdag',
       type: 'celebration',
+      id: CelebrationDayId.EasterTuesday,
     },
     {
-      date: new Date(year, easter.month, easter.day - 5),
+      date: getDateString(easter.day - 5, easter.month, year),
       name: 'Pannekakedagen',
       type: 'celebration',
+      id: CelebrationDayId.PancakeDay,
     },
     {
       date: getNthWeekdayInMonth(2, Weekday.Saturday, 4, year),
       name: 'Årets første grilldag',
       type: 'celebration',
+      id: CelebrationDayId.FirstGrillDay,
     },
     {
-      date: new Date(year, 5, 1),
+      date: getDateString(1, 6, year),
       name: 'Verdens melkedag',
       type: 'celebration',
+      id: CelebrationDayId.WorldMilkDay,
     },
     {
       date: getNthWeekdayInMonth(2, Weekday.Saturday, 5, year),
       name: 'Sjømatens dag',
       type: 'celebration',
+      id: CelebrationDayId.SeaFoodDay,
     },
     {
-      date: new Date(year, 5, 23),
+      date: getDateString(23, 6, year),
       name: 'Sankthans',
       type: 'celebration',
+      id: CelebrationDayId.MidsummersEve,
     },
     {
-      date: new Date(year, 6, 29),
+      date: getDateString(29, 7, year),
       name: 'Olsok',
       type: 'celebration',
+      id: CelebrationDayId.Olsok,
     },
     {
       date: getNthLastWeekdayInMonth(1, Weekday.Tuesday, 8, year),
       name: 'Den norske epledagen',
       type: 'celebration',
+      id: CelebrationDayId.NorwegianAppleDay,
     },
     {
       date: getNthLastWeekdayInMonth(1, Weekday.Wednesday, 8, year),
       name: 'Verdens skolemelkdag',
       type: 'celebration',
+      id: CelebrationDayId.WorldSchoolMilkDay,
     },
     {
       date: getNthLastWeekdayInMonth(1, Weekday.Thursday, 8, year),
       name: 'Fårikålens festdag',
       type: 'celebration',
+      id: CelebrationDayId.FeastOfTheSheepCabbage,
     },
     {
       date: getNthWeekdayInMonth(1, Weekday.Wednesday, 9, year),
       name: 'Lutefisksesongen starter',
       type: 'celebration',
+      id: CelebrationDayId.StartOfLuteFishSeason,
     },
     {
-      date: new Date(year, 9, 4),
+      date: getDateString(4, 10, year),
       name: 'Kanelbollens dag',
       type: 'celebration',
+      id: CelebrationDayId.CinnamonRollDay,
     },
     {
       date: getNthWeekdayInMonth(2, Weekday.Friday, 9, year),
       name: 'Verdens eggdag',
       type: 'celebration',
+      id: CelebrationDayId.WorldEggDay,
     },
     {
-      date: new Date(year, 9, 16),
+      date: getDateString(16, 10, year),
       name: 'Verdens matvaredag',
       type: 'celebration',
+      id: CelebrationDayId.WorldFoodDay,
     },
     {
-      date: new Date(year, 9, 16),
+      date: getDateString(16, 10, year),
       name: 'Verdens brøddag',
       type: 'celebration',
+      id: CelebrationDayId.WorldBreadDay,
     },
     {
-      date: new Date(year, 9, 23),
+      date: getDateString(23, 10, year),
       name: 'Grøtdagen',
       type: 'celebration',
+      id: CelebrationDayId.PorridgeDay,
     },
     {
-      date: new Date(year, 9, 31),
+      date: getDateString(31, 10, year),
       name: 'Halloween',
       type: 'celebration',
+      id: CelebrationDayId.Halloween,
     },
     {
       date: getNthLastWeekdayInMonth(1, Weekday.Friday, 9, year),
       name: 'Ostens dag',
       type: 'celebration',
+      id: CelebrationDayId.CheeseDay,
     },
     {
-      date: new Date(year, 10, 11),
+      date: getDateString(11, 11, year),
       name: 'Mortensmesse',
       type: 'celebration',
+      id: CelebrationDayId.MortensFair,
     },
     {
       date: getNthWeekdayInMonth(2, Weekday.Sunday, 10, year),
       name: 'Farsdag',
       type: 'celebration',
+      id: CelebrationDayId.FathersDay,
     },
     {
       date: getNthWeekdayInMonth(4, Weekday.Thursday, 10, year),
       name: 'Thanksgiving',
       type: 'celebration',
+      id: CelebrationDayId.Thanksgiving,
     },
     {
-      date: new Date(year, 11, 13),
+      date: getDateString(13, 12, year),
       name: 'Luciadagen',
       type: 'celebration',
+      id: CelebrationDayId.LuciaDay,
     },
   ]
 }

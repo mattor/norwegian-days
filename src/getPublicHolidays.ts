@@ -1,4 +1,6 @@
 import type { SpecialDay } from './types/SpecialDay'
+import { PublicHolidayId } from './const/SpecialDayId'
+import { getDateString } from './helpers/getDateString'
 import { getEasterSunday } from './helpers/getEasterSunday'
 
 export function getPublicHolidays(year: number = new Date().getFullYear()): SpecialDay[] {
@@ -6,79 +8,94 @@ export function getPublicHolidays(year: number = new Date().getFullYear()): Spec
 
   return [
     {
-      date: new Date(year, 0, 1),
+      date: getDateString(1, 1, year),
       name: 'Første nyttårsdag',
       type: 'public-holiday',
+      id: PublicHolidayId.NewYearsDay,
     },
     {
-      date: new Date(year, easter.month, easter.day - 7),
+      date: getDateString(easter.day - 7, easter.month, year),
       name: 'Palmesøndag',
       type: 'public-holiday',
+      id: PublicHolidayId.PalmSunday,
     },
     {
-      date: new Date(year, easter.month, easter.day - 3),
+      date: getDateString(easter.day - 3, easter.month, year),
       name: 'Skjærtorsdag',
       type: 'public-holiday',
+      id: PublicHolidayId.MaundyThursday,
     },
     {
-      date: new Date(year, easter.month, easter.day - 2),
+      date: getDateString(easter.day - 2, easter.month, year),
       name: 'Langfredag',
       type: 'public-holiday',
+      id: PublicHolidayId.GoodFriday,
     },
     {
-      date: new Date(year, easter.month, easter.day),
+      date: getDateString(easter.day, easter.month, year),
       name: 'Første påskedag',
       type: 'public-holiday',
+      id: PublicHolidayId.EasterSunday,
     },
     {
-      date: new Date(year, easter.month, easter.day + 1),
+      date: getDateString(easter.day + 1, easter.month, year),
       name: 'Andre påskedag',
       type: 'public-holiday',
+      id: PublicHolidayId.EasterMonday,
     },
     {
-      date: new Date(year, easter.month, easter.day + 39),
+      date: getDateString(easter.day + 39, easter.month, year),
       name: 'Kristi himmelfartsdag',
       type: 'public-holiday',
+      id: PublicHolidayId.AscensionDay,
     },
     {
-      date: new Date(year, 4, 1),
+      date: getDateString(1, 5, year),
       name: 'Offentlig høytidsdag (1. mai)',
       type: 'public-holiday',
+      id: PublicHolidayId.LabourDay,
     },
     {
-      date: new Date(year, 4, 17),
+      date: getDateString(17, 5, year),
       name: 'Grunnlovsdag (17. mai)',
       type: 'public-holiday',
+      id: PublicHolidayId.ConstitutionDay,
     },
     {
-      date: new Date(year, easter.month, easter.day + 49),
+      date: getDateString(easter.day + 49, easter.month, year),
       name: 'Første pinsedag',
       type: 'public-holiday',
+      id: PublicHolidayId.WhitSunday,
     },
     {
-      date: new Date(year, easter.month, easter.day + 50),
+      date: getDateString(easter.day + 50, easter.month, year),
       name: 'Andre pinsedag',
       type: 'public-holiday',
+      id: PublicHolidayId.WhitMonday,
     },
     {
-      date: new Date(year, 11, 24),
+      date: getDateString(24, 12, year),
       name: 'Julaften',
       type: 'public-holiday',
+      id: PublicHolidayId.ChristmasEve,
     },
     {
-      date: new Date(year, 11, 25),
+      date: getDateString(25, 12, year),
       name: 'Første juledag',
       type: 'public-holiday',
+      id: PublicHolidayId.ChristmasDay,
     },
     {
-      date: new Date(year, 11, 26),
+      date: getDateString(26, 12, year),
       name: 'Andre juledag',
       type: 'public-holiday',
+      id: PublicHolidayId.BoxingDay,
     },
     {
-      date: new Date(year, 11, 31),
+      date: getDateString(31, 12, year),
       name: 'Nyttårsaften',
       type: 'public-holiday',
+      id: PublicHolidayId.NewYearsEve,
     },
   ]
 }

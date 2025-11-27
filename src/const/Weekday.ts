@@ -6,4 +6,4 @@ export const Weekday = {
   Thursday: 4,
   Friday: 5,
   Saturday: 6,
-}
+} as const

@@ -1,4 +1,7 @@
-export function getNthWeekdayInMonth(nth: number, day: number, m: number, y: number): Date {
+import type { DateString } from '../types/DateString'
+import { getDateString } from './getDateString'
+
+export function getNthWeekdayInMonth(nth: number, day: number, m: number, y: number): DateString {
   let targetDay = new Date(0, 0, 0)
   let curDay = 0
   let i = 1
@@ -10,5 +13,5 @@ export function getNthWeekdayInMonth(nth: number, day: number, m: number, y: num
     }
   }
 
-  return targetDay
+  return getDateString(targetDay.getDate(), targetDay.getMonth() + 1, targetDay.getFullYear())
 }
