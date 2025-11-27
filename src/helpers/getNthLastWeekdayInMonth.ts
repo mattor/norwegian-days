@@ -1,6 +1,4 @@
-import type Weekday from '../types/Weekday'
-
-function getNthLastWeekdayInMonth(nth: number, day: Weekday, m: number, y: number): Date {
+export function getNthLastWeekdayInMonth(nth: number, day: number, m: number, y: number): Date {
   let targetDay = new Date(0, 0, 0)
   let curDay = 0
   let i = new Date(y, m + 1, 0).getDate()
@@ -14,5 +12,3 @@ function getNthLastWeekdayInMonth(nth: number, day: Weekday, m: number, y: numbe
 
   return targetDay
 }
-
-export default getNthLastWeekdayInMonth

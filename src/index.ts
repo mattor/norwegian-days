@@ -1,6 +1,6 @@
-import getSpecialDays from './getSpecialDays'
+import { getSpecialDays } from './getSpecialDays'
 
-export { default as ISpecialDay } from './types/ISpecialDay'
-export { default as SpecialDayType } from './types/SpecialDayType'
+export { type SpecialDay } from './types/SpecialDay'
+export { type SpecialDayType } from './types/SpecialDayType'
 
 export default getSpecialDays

@@ -1,4 +1,4 @@
-function getEasterSunday(year: number) {
+export function getEasterSunday(year: number) {
   const c = Math.floor(year / 100)
   const n = year - 19 * Math.floor(year / 19)
   const k = Math.floor((c - 17) / 25)
@@ -16,5 +16,3 @@ function getEasterSunday(year: number) {
     month: m - 1,
   }
 }
-
-export default getEasterSunday
