@@ -1,6 +1,7 @@
 {
   "name": "norwegian-days",
   "version": "1.1.2",
+  "packageManager": "pnpm@10.23.0",
   "description": "Generate a list of Norway's public holidays and other celebrations during a year",
   "author": "Torbjørn Mathisen",
   "license": "MIT",
@@ -19,16 +20,17 @@
   ],
   "scripts": {
     "build": "tsc",
+    "check": "tsc --noemit",
     "clean": "rimraf lib",
     "lint": "eslint --fix",
-    "prepare": "npm run clean && npm run lint && npm run build",
-    "test": "vitest"
+    "prepare": "pnpm clean && pnpm lint && pnpm test && pnpm build",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.2.0",
     "eslint": "^9.39.1",
     "eslint-plugin-format": "^1.0.2",
-    "minimist": ">=1.2.8",
     "rimraf": "^6.1.2",
     "typescript": "^5.9.3",
     "vitest": "^4.0.14"
