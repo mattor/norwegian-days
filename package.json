@@ -1,7 +1,8 @@
 {
   "name": "norwegian-days",
+  "type": "module",
   "version": "1.2.0",
-  "packageManager": "pnpm@10.23.0",
+  "packageManager": "pnpm@10.33.0",
   "description": "Generate a list of Norway's public holidays and other celebrations during a year",
   "author": "Torbjørn Mathisen",
   "license": "MIT",
@@ -28,11 +29,11 @@
     "test:watch": "vitest"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.2.0",
-    "eslint": "^9.39.1",
-    "eslint-plugin-format": "^1.0.2",
-    "rimraf": "^6.1.2",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.14"
+    "@antfu/eslint-config": "^7.7.3",
+    "eslint": "^10.1.0",
+    "eslint-plugin-format": "^2.0.1",
+    "rimraf": "^6.1.3",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.2"
   }
 }

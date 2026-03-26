@@ -1,5 +1,5 @@
-import type { DateString } from './DateString'
-import type { SpecialDayType } from './SpecialDayType'
+import type { DateString } from './DateString.js'
+import type { SpecialDayType } from './SpecialDayType.js'
 
 export interface SpecialDay {
   date: DateString

@@ -1,7 +1,7 @@
-import type { SpecialDay } from './types/SpecialDay'
-import { PublicHolidayId } from './const/SpecialDayId'
-import { getDateString } from './helpers/getDateString'
-import { getEasterSunday } from './helpers/getEasterSunday'
+import type { SpecialDay } from './types/SpecialDay.js'
+import { PublicHolidayId } from './const/SpecialDayId.js'
+import { getDateString } from './helpers/getDateString.js'
+import { getEasterSunday } from './helpers/getEasterSunday.js'
 
 export function getPublicHolidays(year: number = new Date().getFullYear()): SpecialDay[] {
   const easter = getEasterSunday(year)

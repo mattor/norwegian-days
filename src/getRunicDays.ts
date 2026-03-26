@@ -1,6 +1,6 @@
-import type { SpecialDay } from './types/SpecialDay'
-import { RunicDayId } from './const/SpecialDayId'
-import { getDateString } from './helpers/getDateString'
+import type { SpecialDay } from './types/SpecialDay.js'
+import { RunicDayId } from './const/SpecialDayId.js'
+import { getDateString } from './helpers/getDateString.js'
 
 export function getRunicDays(year: number = new Date().getFullYear()): SpecialDay[] {
   return [

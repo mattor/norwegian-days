@@ -1,11 +1,11 @@
-import type { SpecialDay } from './types/SpecialDay'
-import { CelebrationDayId } from './const/SpecialDayId'
-import { Weekday } from './const/Weekday'
-import { getDateString } from './helpers/getDateString'
-import { getEasterSunday } from './helpers/getEasterSunday'
-import { getFirstSundayOfAdvent } from './helpers/getFirstSundayOfAdvent'
-import { getNthLastWeekdayInMonth } from './helpers/getNthLastWeekdayInMonth'
-import { getNthWeekdayInMonth } from './helpers/getNthWeekdayInMonth'
+import type { SpecialDay } from './types/SpecialDay.js'
+import { CelebrationDayId } from './const/SpecialDayId.js'
+import { Weekday } from './const/Weekday.js'
+import { getDateString } from './helpers/getDateString.js'
+import { getEasterSunday } from './helpers/getEasterSunday.js'
+import { getFirstSundayOfAdvent } from './helpers/getFirstSundayOfAdvent.js'
+import { getNthLastWeekdayInMonth } from './helpers/getNthLastWeekdayInMonth.js'
+import { getNthWeekdayInMonth } from './helpers/getNthWeekdayInMonth.js'
 
 export function getCelebrationDays(year: number = new Date().getFullYear()): SpecialDay[] {
   const easter = getEasterSunday(year)

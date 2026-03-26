@@ -1,5 +1,5 @@
-import type { DateString } from '../types/DateString'
-import { getDateString } from './getDateString'
+import type { DateString } from '../types/DateString.js'
+import { getDateString } from './getDateString.js'
 
 export function getNthWeekdayInMonth(nth: number, day: number, m: number, y: number): DateString {
   let targetDay = new Date(0, 0, 0)

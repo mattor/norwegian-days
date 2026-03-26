@@ -1,8 +1,8 @@
-import type { SpecialDay } from './types/SpecialDay'
-import type { SpecialDayType } from './types/SpecialDayType'
-import { getCelebrationDays } from './getCelebrationDays'
-import { getPublicHolidays } from './getPublicHolidays'
-import { getRunicDays } from './getRunicDays'
+import type { SpecialDay } from './types/SpecialDay.js'
+import type { SpecialDayType } from './types/SpecialDayType.js'
+import { getCelebrationDays } from './getCelebrationDays.js'
+import { getPublicHolidays } from './getPublicHolidays.js'
+import { getRunicDays } from './getRunicDays.js'
 
 export function getSpecialDays(year: number = new Date().getFullYear(), types: SpecialDayType[] = ['public-holiday', 'celebration']): SpecialDay[] {
   const specialDays: SpecialDay[] = [
