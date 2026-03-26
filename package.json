@@ -1,6 +1,6 @@
 {
   "name": "norwegian-days",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "packageManager": "pnpm@10.23.0",
   "description": "Generate a list of Norway's public holidays and other celebrations during a year",
   "author": "Torbjørn Mathisen",
