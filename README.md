@@ -46,7 +46,6 @@ const specialDaysOf2019 = getSpecialDays(2019, ['RUNIC'])
 - Grunnlovsdag (17. mai)
 - Første pinsedag
 - Andre pinsedag
-- Julaften
 - Første juledag
 - Andre juledag
 

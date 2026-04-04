@@ -74,12 +74,6 @@ export function getPublicHolidays(year: number = new Date().getFullYear()): Spec
       id: PublicHolidayId.WhitMonday,
     },
     {
-      date: getDateString(24, 12, year),
-      name: 'Julaften',
-      type: 'public-holiday',
-      id: PublicHolidayId.ChristmasEve,
-    },
-    {
       date: getDateString(25, 12, year),
       name: 'Første juledag',
       type: 'public-holiday',

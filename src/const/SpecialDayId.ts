@@ -42,7 +42,6 @@ export const PublicHolidayId = {
   AscensionDay: 'ascension-day',
   BoxingDay: 'boxing-day',
   ChristmasDay: 'christmas-day',
-  ChristmasEve: 'christmas-eve',
   ConstitutionDay: 'constitution-day',
   EasterMonday: 'easter-monday',
   EasterSunday: 'easter-sunday',
