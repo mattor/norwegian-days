@@ -45,4 +45,10 @@ it('should return the correct special days', () => {
 
   const thanksgiving = specialDaysOf1977.find(day => day.id === CelebrationDayId.Thanksgiving)
   expect(thanksgiving.date).toEqual('1977-11-24')
+
+  const christmasEve = specialDaysOf1977.find(day => day.id === CelebrationDayId.ChristmasEve)
+  expect(christmasEve.date).toEqual('1977-12-24')
+
+  const newYearsEve = specialDaysOf1977.find(day => day.id === CelebrationDayId.NewYearsEve)
+  expect(newYearsEve.date).toEqual('1977-12-31')
 })

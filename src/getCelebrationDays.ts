@@ -234,5 +234,17 @@ export function getCelebrationDays(year: number = new Date().getFullYear()): Spe
       type: 'celebration',
       id: CelebrationDayId.FourthSundayOfAdvent,
     },
+    {
+      date: getDateString(24, 12, year),
+      name: 'Julaften',
+      type: 'celebration',
+      id: CelebrationDayId.ChristmasEve,
+    },
+    {
+      date: getDateString(31, 12, year),
+      name: 'Nyttårsaften',
+      type: 'celebration',
+      id: CelebrationDayId.NewYearsEve,
+    },
   ]
 }

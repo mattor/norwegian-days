@@ -1,6 +1,7 @@
 export const CelebrationDayId = {
   CakeDay: 'cake-day',
   CheeseDay: 'cheese-day',
+  ChristmasEve: 'christmas-eve',
   CinnamonRollDay: 'cinnamon-roll-day',
   EarthDay: 'earth-day',
   EasterTuesday: 'easter-tuesday',
@@ -17,6 +18,7 @@ export const CelebrationDayId = {
   MidsummersEve: 'midsummers-eve',
   MortensFair: 'mortens-fair',
   MothersDay: 'mothers-day',
+  NewYearsEve: 'new-years-eve',
   NorwegianAppleDay: 'norwegian-apple-day',
   Olsok: 'olsok',
   PancakeDay: 'pancake-day',

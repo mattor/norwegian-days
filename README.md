@@ -88,6 +88,8 @@ const specialDaysOf2019 = getSpecialDays(2019, ['RUNIC'])
 - Andre søndag i advent
 - Tredje søndag i advent
 - Fjerde søndag i advent
+- Julaften
+- Nyttårsaften
 
 ### Runic calendar days
 
