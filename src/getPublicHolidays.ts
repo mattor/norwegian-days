@@ -91,11 +91,5 @@ export function getPublicHolidays(year: number = new Date().getFullYear()): Spec
       type: 'public-holiday',
       id: PublicHolidayId.BoxingDay,
     },
-    {
-      date: getDateString(31, 12, year),
-      name: 'Nyttårsaften',
-      type: 'public-holiday',
-      id: PublicHolidayId.NewYearsEve,
-    },
   ]
 }

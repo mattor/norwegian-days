@@ -50,7 +50,6 @@ export const PublicHolidayId = {
   LabourDay: 'labour-day',
   MaundyThursday: 'maundy-thursday',
   NewYearsDay: 'new-years-day',
-  NewYearsEve: 'new-years-eve',
   PalmSunday: 'palm-sunday',
   WhitMonday: 'whit-monday',
   WhitSunday: 'whit-sunday',

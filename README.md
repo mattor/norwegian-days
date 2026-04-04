@@ -49,7 +49,6 @@ const specialDaysOf2019 = getSpecialDays(2019, ['RUNIC'])
 - Julaften
 - Første juledag
 - Andre juledag
-- Nyttårsaften
 
 ### Celebration days
 
